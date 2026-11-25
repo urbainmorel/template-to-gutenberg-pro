@@ -1,7 +1,7 @@
 {
   "name": "template-to-gutenberg-pro",
   "displayName": "Template to Gutenberg Pro Cloner",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Pixel-perfect website cloner skill & CLI tools that convert any HTML, screenshot, or video template into pure WordPress Gutenberg Pro Blocks and CF7 Pro Suite forms.",
   "skills": [
     "./skills"

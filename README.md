@@ -1,21 +1,23 @@
-# Template to Gutenberg Pro (`template-to-gutenberg-pro`)
+# Template to Gutenberg Pro (`template-to-gutenberg-pro` v2.0.0)
 
-**100% Free & Open-Source (`v1.0.0`)** (`MIT` + `GPL-2.0-or-later`) — Universal AI Agent Skill & CLI Suite for cloning **any HTML/Tailwind template, screenshot/image, or screen-recording video** pixel-for-pixel and animation-for-animation into **pure WordPress Gutenberg blocks** powered by [`gutenberg-pro-blocks`](https://github.com/urbainmorel/gutenberg-pro-blocks) and [`cf7-pro-suite`](https://github.com/urbainmorel/cf7-pro-suite).
+**100% Free & Open-Source (`v2.0.0`)** (`MIT` + `GPL-2.0-or-later`) — High-Precision Universal AI Agent Skill & AST Compiler Suite for cloning **any HTML/Tailwind template, screenshot/image, or screen-recording video** pixel-for-pixel and animation-for-animation into **pure WordPress Gutenberg blocks** powered by [`gutenberg-pro-blocks`](https://github.com/urbainmorel/gutenberg-pro-blocks) and [`cf7-pro-suite`](https://github.com/urbainmorel/cf7-pro-suite).
 
 ---
 
-## The Complete 3-Repo Open-Source WordPress Ecosystem
+## Precision CLI Suite (`v2.0.0`)
 
-1. **[`gutenberg-pro-blocks`](https://github.com/urbainmorel/gutenberg-pro-blocks)** — Responsive Desktop/Tablet/Mobile CSS, 3D Tilt & Transforms, Glassmorphism, 15 Interactive Controllers, Server-Side Display Conditions & Dynamic Tags (ACF/WooCommerce), Visual Gutenberg Inspector, and MCP Adapter Abilities.
-2. **[`cf7-pro-suite`](https://github.com/urbainmorel/cf7-pro-suite)** — Multi-Step Wizards, Conditional Logic (Client + Server), Live Calculators, 7 Smart Fields (International Phone with Cloudflare `HTTP_CF_IPCOUNTRY`, Digital Signature, Star Rating, Smart Date/Slots, Masks, Repeater, Toggle), Cloudflare Turnstile + Smart reCAPTCHA Optimizer, Local Entries CSV, Webhooks, and MCP Adapter Abilities.
-3. **`template-to-gutenberg-pro` (This Repo)** — The AI Cloning Protocol & CLI tools (`extract-template-spec.js` + `render-gpb-preview.js`) that convert HTML, Images, or Videos into pure Gutenberg Pro + CF7 Pro markup without simplifying micro-details.
+| Tool | Purpose |
+| :--- | :--- |
+| **`extract-template-spec.js`** | Stack-based HTML DOM + CSS Stylesheet + `:root` variable resolver + Tailwind v3/v4 token extractor |
+| **`convert-html-to-gpb.js`** | Deterministic HTML/CSS/Tailwind -> pure WordPress 7.0 Gutenberg Pro + CF7 Pro compiler |
+| **`audit-pixel-fidelity.js`** | Automated 0–100% Fidelity Auditor (section coverage, verbatim headings/CTAs, color tokens, responsive parity, Gutenberg integrity) |
+| **`render-gpb-preview.js`** | Sequential nested block compiler producing a standalone `preview.html` with Google Fonts & **Onion-Skin Reference Diff Toolbar** (`--reference`) |
 
 ---
 
 ## Quick Start: Install the Skill (Any Harness)
 
 ### Option 1: Universal CLI (`npx skills`)
-Works with **Antigravity, Claude Code, Codex, OpenCode, Cursor, Windsurf**:
 ```bash
 npx skills add urbainmorel/template-to-gutenberg-pro
 ```
@@ -38,18 +40,20 @@ chmod +x install.sh && ./install.sh
 
 ---
 
-## Included CLI Tools
+## Example Precision Pipeline
 
-### 1. Design Token & Tailwind Extractor (`extract-template-spec.js`)
-Extracts colors, gradients, fonts, blurs, `@keyframes`, Tailwind layout/hover/glass classes, and semantic sections from any HTML template:
 ```bash
+# 1. Extract CSS variables, Tailwind tokens & sections
 node skills/template-to-gutenberg-pro/scripts/extract-template-spec.js --file template.html --json
-```
 
-### 2. Standalone Visual Preview Compiler (`render-gpb-preview.js`)
-Compiles `<!-- wp:... {"gpb":{...}} -->` markup into a browser-ready `preview.html` to inspect pixel fidelity before pasting into WordPress or deploying via MCP Adapter:
-```bash
-node skills/template-to-gutenberg-pro/scripts/render-gpb-preview.js --input page.html --output preview.html
+# 2. Deterministically convert HTML/Tailwind -> Pure Gutenberg Pro + CF7 Pro
+node skills/template-to-gutenberg-pro/scripts/convert-html-to-gpb.js --file template.html --output cloned.html --cf7-out form.html
+
+# 3. Audit Pixel Fidelity (0-100%)
+node skills/template-to-gutenberg-pro/scripts/audit-pixel-fidelity.js --source template.html --target cloned.html
+
+# 4. Render browser preview with optional screenshot onion-skin overlay
+node skills/template-to-gutenberg-pro/scripts/render-gpb-preview.js --input cloned.html --output preview.html --reference screenshot.png
 ```
 
 ---

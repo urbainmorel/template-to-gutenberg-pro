@@ -1,6 +1,6 @@
 {
   "name": "template-to-gutenberg-pro",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Pixel-perfect HTML/Image/Video Template Cloner Skill & CLI suite for pure WordPress Gutenberg Pro Blocks + CF7 Pro Suite",
   "scripts": {
     "test": "node scripts/run-self-test.js"
