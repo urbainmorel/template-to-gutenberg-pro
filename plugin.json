@@ -1,0 +1,23 @@
+{
+  "name": "template-to-gutenberg-pro",
+  "displayName": "Template to Gutenberg Pro Cloner",
+  "version": "1.0.0",
+  "description": "Pixel-perfect website cloner skill & CLI tools that convert any HTML, screenshot, or video template into pure WordPress Gutenberg Pro Blocks and CF7 Pro Suite forms.",
+  "skills": [
+    "./skills"
+  ],
+  "author": {
+    "name": "Morel Urbain",
+    "url": "https://github.com/urbainmorel"
+  },
+  "homepage": "https://github.com/urbainmorel/template-to-gutenberg-pro",
+  "repository": "https://github.com/urbainmorel/template-to-gutenberg-pro",
+  "license": "GPL-2.0-or-later AND MIT",
+  "keywords": [
+    "wordpress",
+    "gutenberg",
+    "pixel-perfect",
+    "template-cloner",
+    "tailwind-to-gutenberg"
+  ]
+}

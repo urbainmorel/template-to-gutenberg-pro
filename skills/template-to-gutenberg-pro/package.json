@@ -1,0 +1,7 @@
+{
+  "name": "template-to-gutenberg-pro",
+  "version": "1.0.0",
+  "description": "Universal AI Agent Skill for pixel-perfect HTML/Image/Video cloning into WordPress Gutenberg Pro Blocks + CF7 Pro Suite",
+  "license": "MIT",
+  "type": "commonjs"
+}

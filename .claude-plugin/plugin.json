@@ -1,0 +1,12 @@
+{
+  "name": "template-to-gutenberg-pro",
+  "version": "1.0.0",
+  "description": "Universal AI Agent Skill for pixel-perfect HTML/Image/Video cloning into Gutenberg Pro Blocks + CF7 Pro Suite.",
+  "author": {
+    "name": "Morel Urbain",
+    "url": "https://github.com/urbainmorel"
+  },
+  "repository": "https://github.com/urbainmorel/template-to-gutenberg-pro",
+  "license": "MIT",
+  "skills": "./skills/"
+}

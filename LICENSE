@@ -1,0 +1,14 @@
+# Dual License — GPL-2.0-or-later AND MIT
+
+This repository is dual-licensed to ensure full compatibility with both the WordPress ecosystem and modern AI coding agent harnesses:
+
+1. **WordPress Plugin (`wordpress-plugin/`)**
+   - Licensed under the **GNU General Public License v2.0 or later (`GPL-2.0-or-later`)**.
+   - See `LICENSE-GPL-2.0.txt` for the full license text.
+
+2. **AI Agent Skill, Schemas, Documentation, Installers & Validator (`skills/`, `install.sh`, `install.ps1`, `plugin.json`)**
+   - Dual-licensed under the **MIT License (`MIT`)** AND **`GPL-2.0-or-later`**.
+   - You may use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies under either license.
+   - See `LICENSE-MIT.txt` for the MIT license text.
+
+Copyright (c) 2026 Morel Urbain
